@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	
+	<h1>Задача №1</h1>
+	<h2>Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці.</h2>
+	<h3>Відповідь:</h3>
+
+	<script>
+
+		// Знайти
+		// суму двох чисел - sumTwoNumbers
+		// добуток двох чисел - productTwoNumbers
+		// частку двох чисел - quotientTwoNumbers
+
+		// Вхідні дані
+		// Перше число - firstNumber
+		// друге число - secondNumber
+
+		// ---------------------------------------
+
+		// 1. Введення необхідних даних
+
+		let firstNumber = parseFloat(prompt('Введіть перше число', '0'))
+		let secondNumber = parseFloat(prompt('Введіть друге число', '0'))
+
+		// 2. Обчислення результату
+
+		let sumTwoNumbers = firstNumber + secondNumber
+		let productTwoNumbers = firstNumber * secondNumber
+		let quotientTwoNumbers = firstNumber / secondNumber
+
+		// 3. Виведення результату
+
+		document.write(`Сума двох чисел = ${sumTwoNumbers} <br>`)
+		document.write(`Добуток двох чисел = ${productTwoNumbers} <br>`)
+		document.write(`Частка двох чисел = ${quotientTwoNumbers}`)
+
+	</script>
+</body>
+
+</html>
