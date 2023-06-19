@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Задача №4</h1>
+	<h2>З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом,
+		працівником, пенсіонером).</h2>
+	<h3>Відповідь:</h3>
+
+	<script>
+
+		//Крок 0. Вводимо позначення
+
+		//Вік людини - humanAge
+
+		// Мінімальний вік дитини у садочку - minAgeChildKindergarten
+		// Максимальний вік дитини у садочку - maxAgeChildKindergarten
+		// Мінімальний вік школяра - minAgeSchoolboy
+		// Максимальний вік школяра - maxAgeSchoolboy
+		// Мінімальний вік студента - minAgeStudent
+		// Максимальний вік студента - maxAgeStudent
+		// Мінімальний вік працівника - minAgeWorker
+		// Максимальний вік працівника - maxAgeWorker
+		// Мінімальний вік пенсіонера - minAgePensioner
+		// Мінімальний вік пенсіонера - maxAgePensioner
+
+		//Крок 1. Введення величин
+
+		// let humanAge = parseInt(prompt('Введіть вік людини (з 2х до 100 років)', '2'))
+		// const minAgeChildKindergarten = 2
+		// const maxAgeChildKindergarten = 6
+		// const minAgeSchoolboy = 7
+		// const maxAgeSchoolboy = 18
+		// const minAgeStudent = 19
+		// const maxAgeStudent = 25
+		// const minAgeWorker = 26
+		// const maxAgeWorker = 64
+		// const minAgePensioner = 65
+		// const maxAgePensioner = 100
+
+		// //Крок 2. Розв"язок заадачі
+
+		// if (humanAge >= minAgeChildKindergarten && humanAge <= maxAgeChildKindergarten)
+		// 	document.write('Вік дитини у садочку!')
+		// else if (humanAge >= minAgeSchoolboy && humanAge <= maxAgeSchoolboy)
+		// 	document.write('Вік школяра!')
+		// else if (humanAge >= minAgeStudent && humanAge <= maxAgeStudent)
+		// 	document.write('Вік студента!')
+		// else if (humanAge >= minAgeWorker && humanAge <= maxAgeWorker)
+		// 	document.write('Вік працівника!')
+		// else if (humanAge >= minAgePensioner && humanAge <= maxAgePensioner)
+		// 	document.write('Вік пенсіонера!')
+		// else document.write('Введений вами вік не відповідає жодній категорії.')
+
+		//----------------------------------------
+
+		//Крок 0. Вводимо позначення
+
+		//Вік людини - humanAge
+
+		//Крок 1. Введення величин
+
+		const humanAge = parseInt(prompt('Введіть ваш вік', '1'))
+
+		//Крок 2. Розв"язок заадачі
+
+		let result
+		if (humanAge < 1 || humanAge > 130) result = 'Некоректний вік.'
+		else if (humanAge < 6) result = 'Вік дитини у садочку!'
+		else if (humanAge < 17) result = 'Вік школяра!'
+		else if (humanAge < 22) result = 'Вік студента!'
+		else if (humanAge < 65) result = 'Вік працівника!'
+		else result = 'Вік пенсіонера!'
+		document.write(result)
+
+	</script>
+</body>
+
+</html>

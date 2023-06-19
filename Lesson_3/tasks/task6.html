@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Задача №6</h1>
+	<h2>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.</h2>
+	<h3>Відповідь:</h3>
+
+	<script>
+
+//----------------------------------------
+	//Задача. З клавіатури вводиться номер місця, яку зайняв спортсмен. Вивести, яку медаль він отримає:
+	//1-золота
+	// 2-срібна
+	// 3-бронзова
+	// Все інше - грамота
+	//Крок 0. Вводимо позначення
+	//номер місця -  placeNum
+	//Крок 1. Введення величин
+	// let placeNum = parseInt(prompt('Місце, яке зайняв спортсмен'))
+	// //Крок 2. Розв"язок заадачі
+	// let res
+	// switch (placeNum) {
+	//   case 1:
+	//     res = 'Золота'
+	//     break
+	//   case 2:
+	//     res = 'Срібна'
+	//     break
+	//   case 3:
+	//     res = 'Бронза'
+	//     break
+
+	//   default:
+	//     res = 'Грамота'
+	//     break
+	// }
+	// alert(res)
+
+	//----------------------------------------
+
+	//Крок 0. Вводимо позначення
+
+	// 1 - Понеділок
+	// 2 - Вівторок
+	// 3 - Середа
+	// 4 - Четвер
+	// 5 - Пятниця
+	// 6 - Суббота
+	// 7 - Неділя
+
+	// Номер дня тижня - dayWeekNumber
+
+	//Крок 1. Введення величин
+
+	let dayWeekNumber = parseInt(prompt('Введіть номер дня тижня:', '1'))
+
+	//Крок 2. Розв"язок заадачі
+
+	let result
+	switch (dayWeekNumber) {
+		case 1: result = 'Понеділок'
+			break;
+			case 2: result = 'Вівторок'
+			break;
+			case 3: result = 'Середа'
+			break;
+			case 4: result = 'Четвер'
+			break;
+			case 5: result = 'Пятниця'
+			break;
+			case 6: result = 'Субота'
+			break;
+			case 7: result = 'Неділя'
+			break;
+	}
+
+	document.write(`День неділі - ${result}`)
+
+
+	</script>
+
+</body>
+
+</html>

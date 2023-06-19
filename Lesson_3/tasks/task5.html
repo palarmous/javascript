@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Задача №5</h1>
+	<h2>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести
+		на екран назву транспортного засобу, яким він може керувати.</h2>
+	<h3>Відповідь:</h3>
+
+	<script>
+
+		//Крок 0. Вводимо позначення
+
+		//Назва категорії водія - nameDriverCategory
+
+		//Крок 1. Введення величин
+
+		let driverCategory = prompt('Введіть категорію посвідчення водія (А, В, С)', 'A')
+
+		//Крок 2. Розв"язок заадачі
+
+		let res
+
+		switch (driverCategory) {
+			case 'A':
+				res = 'Мотоцикл'
+				break
+			case 'B':
+				res = 'Легковий автомобіль'
+				break
+			case 'C':
+				res = 'Вантажний автомобіль'
+				break
+			default:
+				rest = 'Назва категорії водійського посвідчення введена невірно!'
+				break
+		}
+		document.write(`Транспортний засіб - ${res}`)
+		alert(rest)
+
+
+	</script>
+</body>
+
+</html>
